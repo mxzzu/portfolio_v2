@@ -52,7 +52,31 @@
     background-repeat: repeat;
   }
 
+  header {
+    display: grid;
+    gap: var(--spacing-gap-40);
+  }
+
   main {
     padding: var(--margin);
+  }
+
+  h2 {
+    font-size: var(--h2-size);
+    font-family: var(--font-baskervville);
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: var(--h3-size);
+    font-family: var(--font-baskervville);
+    text-transform: uppercase;
+  }
+  h3.oswald {
+    font-family: var(--font-oswald);
+  }
+  h3.quotes {
+    font-family: var(--font-tangerine);
+    text-transform: capitalize;
   }
 }

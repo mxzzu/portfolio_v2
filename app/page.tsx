@@ -1,12 +1,9 @@
-import Separator from "./ui/separator";
+import Header from "./ui/header";
 
 export default function Home() {
   return (
     <main>
-      <Separator>
-        <p>Ciao</p>
-      </Separator>
-      <Separator />
+      <Header/>
     </main>
   );
 }

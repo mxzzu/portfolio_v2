@@ -1,0 +1,17 @@
+.logoContainer {
+    height: 100%;
+    width: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+}
+.logoContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.headerSeparatorDiv {
+    display: flex;
+    justify-content: space-between;
+}
