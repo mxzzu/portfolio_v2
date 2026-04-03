@@ -1,14 +1,11 @@
 import styles from "./languages.module.css";
-import Separator from "../../components/separator";
 import { languages } from "../../data/languages";
+import SectionTitle from "@/app/components/sectionTitle";
 
-export default function Header() {
+export default function Languages() {
   return (
     <section>
-      <div className="sectionTitle">
-        <h3>global correspondent</h3>
-        <Separator />
-      </div>
+      <SectionTitle title="global correspondent" />
 
       <div className={styles.languageGrid}>
         <div className={styles.gridCol}>

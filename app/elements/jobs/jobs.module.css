@@ -1,0 +1,47 @@
+.jobsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-32);
+}
+
+.jobContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-16);
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-8);
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dutieContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-8);
+}
+
+.dutieWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-16);
+}
+
+.dotContainer {
+  display: flex;
+  gap: var(--spacing-gap-8);
+  align-items: center;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background: var(--color-black);
+  border-radius: 50px;
+}

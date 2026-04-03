@@ -9,6 +9,7 @@
   /* GAPS */
   --spacing-gap-8: 8px;
   --spacing-gap-16: 16px;
+  --spacing-gap-24: 24px;
   --spacing-gap-30: 30px;
   --spacing-gap-32: 32px;
   --spacing-gap-40: 40px;
@@ -73,15 +74,9 @@
     gap: var(--spacing-gap-16);
   }
 
-  section.border {
+  section.bordered {
     padding: var(--padding);
     border: solid 2px var(--color-black);
-  }
-
-  .sectionTitle {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-gap-8);
   }
 
   h1 {
@@ -90,8 +85,8 @@
     text-align: center;
     white-space: nowrap;
     width: 100%;
-    line-height: .9;
-    transform: translate(-.05em, -.05rem);
+    line-height: 0.9;
+    transform: translate(-0.05em, -0.05rem);
     font-size: 10.5cqw;
     user-select: none;
   }
@@ -121,8 +116,22 @@
     text-transform: capitalize;
   }
 
+  h4 {
+    font-family: var(--font-roboto-condensed);
+    font-size: var(--h4-size);
+    text-transform: uppercase;
+  }
+
+  h4.baskervville {
+    font-family: var(--font-baskervville);
+  }
+
   p {
     font-family: var(--font-roboto-condensed);
     font-size: var(--p-size);
+  }
+
+  p.bold {
+    font-weight: var(--font-bold);
   }
 }
