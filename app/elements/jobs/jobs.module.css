@@ -19,6 +19,9 @@
 .titleContainer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: -8px;
+  width: 100%;
 }
 
 .dutieContainer {
