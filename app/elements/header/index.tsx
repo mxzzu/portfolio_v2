@@ -10,51 +10,35 @@ export default function Header() {
           <Image src="/logo.webp" alt="mazzu logo" width={3038} height={580} />
         </div>
 
-        <div>
+        <div className="flex items-center flex-col gap-(--spacing-gap-8)">
           <h2>Software developer</h2>
-          <Separator>
-            <div className={styles.headerSeparatorDiv}>
+          <Separator className="p-0! w-4/5! h-(--padding) md:p-(--padding)! md:h-auto md:w-full!">
+            <div className={`hidden! ${styles.headerSeparatorDiv} md:flex!`}>
               <h3>price: one great opportunity</h3>
               <h3>{new Date().toLocaleDateString()}</h3>
             </div>
           </Separator>
         </div>
 
-        <div className={`hidden ${styles.barCodeContainer} md:grid `}>
+        <div className={`hidden ${styles.barCodeContainer} lg:grid `}>
           <div className={styles.barCodeBarContainer}>
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
-            <div className={styles.barCodeBar} />
+            {[...Array(15)].map((_, index) => (
+              <div key={index} className={styles.barCodeBar} />
+            ))}
           </div>
           <div className={styles.barCodeNumber}>
-            <p>1</p>
-            <p>2</p>
-            <p>5</p>
-            <p>3</p>
-            <p>9</p>
-            <p>0</p>
-            <p>0</p>
-            <p>7</p>
-            <p>6</p>
-            <p>5</p>
-            <p>3</p>
+            {[...Array(11)].map((_, index) => (
+              <p key={index}>{Math.floor(Math.random() * 10)}</p>
+            ))}
           </div>
         </div>
       </div>
-      
-      <h1>Mazzurana Riccardo</h1>
+
+      <h1 className="hidden md:block">Mazzurana Riccardo</h1>
+      <div className="block md:hidden">
+        <h1 className="surnameSmall">Mazzurana</h1>
+        <h1 className="nameSmall">Riccardo</h1>
+      </div>
       <Separator />
     </header>
   );

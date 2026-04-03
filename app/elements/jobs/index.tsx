@@ -18,8 +18,8 @@ export default function Jobs() {
               <p>{job.company}</p>
             </div>
             <div className={styles.dutieWrapper}>
-              {Object.entries(job.duties).map(([title, description]) => (
-                <div className={styles.dutieContainer}>
+              {Object.entries(job.duties).map(([title, description], index) => (
+                <div key={index} className={styles.dutieContainer}>
                   <div className={styles.dotContainer}>
                     <div className={styles.dot}></div>
                     <p className="bold">{title}</p>

@@ -1,11 +1,12 @@
 interface SeparatorProp {
   children?: React.ReactNode;
+  className?: string;
 }
 
-export default function Separator({ children }: SeparatorProp) {
+export default function Separator({ children, className }: SeparatorProp) {
   return (
     <div
-      className={`w-full border-b border-t-2 border-black ${children ? "p-(--padding)" : "h-(--padding)"}`}
+      className={`${className} w-full border-b border-t-2 border-black ${children ? "p-(--padding)" : "h-(--padding)"}`}
     >
       {children}
     </div>

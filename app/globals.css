@@ -90,6 +90,12 @@
     font-size: 10.5cqw;
     user-select: none;
   }
+  h1.surnameSmall{
+    font-size: 20.5cqw !important;
+  }
+  h1.nameSmall {
+    font-size: 23.2cqw !important;
+  }
 
   h2 {
     font-size: var(--h2-size);
