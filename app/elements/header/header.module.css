@@ -12,13 +12,12 @@
     height: auto;
 }
 
-.barCodeContaienr {
+.barCodeContainer {
     height: 100%;
-    display: grid;
     grid-template-rows: 80% 20%;
 }
-.barcodeBarContainer {
-    height: calc(100% - 32px);
+.barCodeBarContainer {
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr .1fr .3fr 1fr .5fr .2fr .2fr .5fr .1fr .3fr .1fr .4fr .6fr .2fr 1fr;
     gap: 1px;
@@ -28,8 +27,8 @@
     width: 100%;
     background: var(--color-black);
 }
-.barcodeBarContainer .barCodeBar:first-child,
-.barcodeBarContainer .barCodeBar:last-child {
+.barCodeBarContainer .barCodeBar:first-child,
+.barCodeBarContainer .barCodeBar:last-child {
     height: 90%;
 }
 .barCodeNumber {
@@ -42,6 +41,7 @@
     font-family: var(--font-roboto-condensed);
     font-size: 24px;
     line-height: .9;
+    user-select: none;
 }
 .barCodeNumber p:first-child, .barCodeNumber p:last-child {
     font-size: 32px;

@@ -4,6 +4,7 @@
   /* COLORS */
   --color-white: #fbfaf5;
   --color-black: #021706;
+  --color-highlight: #ffff0050;
 
   /* GAPS */
   --spacing-gap-8: 8px;
@@ -37,6 +38,9 @@
   ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
+  }
+  ::selection {
+    background: var(--color-highlight);
   }
 
   body {
@@ -72,6 +76,7 @@
     line-height: .9;
     transform: translate(-.05em, -.05rem);
     font-size: 10.5cqw;
+    user-select: none;
   }
 
   h2 {
@@ -79,6 +84,7 @@
     font-family: var(--font-baskervville);
     text-transform: uppercase;
     text-align: center;
+    user-select: none;
   }
 
   h3 {
@@ -86,6 +92,7 @@
     font-family: var(--font-baskervville);
     text-transform: uppercase;
     text-align: center;
+    user-select: none !important;
   }
 
   h3.oswald {

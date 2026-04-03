@@ -20,8 +20,8 @@ export default function Header() {
           </Separator>
         </div>
 
-        <div className={styles.barCodeContainer}>
-          <div className={styles.barcodeBarContainer}>
+        <div className={`hidden ${styles.barCodeContainer} md:grid `}>
+          <div className={styles.barCodeBarContainer}>
             <div className={styles.barCodeBar} />
             <div className={styles.barCodeBar} />
             <div className={styles.barCodeBar} />
@@ -53,6 +53,7 @@ export default function Header() {
           </div>
         </div>
       </div>
+      
       <h1>Mazzurana Riccardo</h1>
       <Separator />
     </header>
