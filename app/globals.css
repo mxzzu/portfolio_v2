@@ -27,7 +27,7 @@
   --h2-size: clamp(2.5rem, 0.78rem + 3.45vw, 3.75rem);
   --h3-size: clamp(2rem, 1.31rem + 1.38vw, 2.5rem);
   --h4-size: 32px;
-  --p-size: 16px;
+  --p-size: 20px;
 }
 
 @layer base {
@@ -65,6 +65,23 @@
 
   main {
     padding: var(--margin);
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap-16);
+  }
+
+  section.border {
+    padding: var(--padding);
+    border: solid 2px var(--color-black);
+  }
+
+  .sectionTitle {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap-8);
   }
 
   h1 {

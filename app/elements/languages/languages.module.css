@@ -1,0 +1,43 @@
+.languageGrid {
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  row-gap: var(--spacing-gap-8);
+}
+
+.gridCol {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  column-gap: var(--spacing-gap-16);
+}
+.gridCol p {
+  text-align: center;
+}
+.gridCol p:first-child {
+  text-align: left;
+}
+
+@media (width >= 48rem) {
+  .gridCol {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    column-gap: var(--spacing-gap-16);
+  }
+}
+
+.dotContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-gap-8);
+}
+
+.dot {
+  height: 20px;
+  width: 20px;
+  border: solid 2px var(--color-black);
+  border-radius: 50px;
+}
+.dotFull {
+  border: none;
+  background: var(--color-black);
+}
