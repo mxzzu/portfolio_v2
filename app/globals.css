@@ -23,8 +23,8 @@
   --font-bold: 700;
 
   /* FONT SIZES */
-  --h2-size: 60px;
-  --h3-size: 40px;
+  --h2-size: clamp(2.5rem, 2.08rem + 2.08vw, 3.75rem);
+  --h3-size: clamp(2rem, 1.83rem + 0.83vw, 2.5rem);
   --h4-size: 32px;
   --p-size: 16px;
 }
@@ -94,5 +94,10 @@
   h3.quotes {
     font-family: var(--font-tangerine);
     text-transform: capitalize;
+  }
+
+  p {
+    font-family: var(--font-roboto-condensed);
+    font-size: var(--p-size);
   }
 }

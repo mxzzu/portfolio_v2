@@ -1,0 +1,59 @@
+.logoContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding);
+    background-color: var(--color-black);
+}
+.logoContainer img {
+    width: 100%;
+    height: auto;
+}
+
+.barCodeContaienr {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+.barcodeBarContainer {
+    height: calc(100% - 32px);
+    display: grid;
+    grid-template-columns: 1fr .1fr .3fr 1fr .5fr .2fr .2fr .5fr .1fr .3fr .1fr .4fr .6fr .2fr 1fr;
+    gap: 1px;
+}
+.barCodeBar {
+    height: 100%;
+    width: 100%;
+    background: var(--color-black);
+}
+.barcodeBarContainer .barCodeBar:first-child,
+.barcodeBarContainer .barCodeBar:last-child {
+    height: 90%;
+}
+.barCodeNumber {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.barCodeNumber p {
+    font-family: var(--font-roboto-condensed);
+    font-size: 24px;
+    line-height: .9;
+}
+.barCodeNumber p:first-child, .barCodeNumber p:last-child {
+    font-size: 32px;
+}
+
+.headerSeparatorDiv {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerContent {
+    display: grid;
+    grid-template-columns: .5fr 3fr .5fr;
+    gap: var(--spacing-gap-30);
+}
