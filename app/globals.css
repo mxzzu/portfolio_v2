@@ -26,7 +26,7 @@
 
   /* FONT SIZES */
   --h2-size: clamp(2.5rem, 0.78rem + 3.45vw, 3.75rem);
-  --h3-size: clamp(2rem, 1.31rem + 1.38vw, 2.5rem);
+  --h3-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem);
   --h4-size: 32px;
   --p-size: 20px;
 }
@@ -103,6 +103,7 @@
     text-transform: uppercase;
     text-align: center;
     user-select: none;
+    line-height: .9;
   }
 
   h3 {
@@ -111,6 +112,7 @@
     text-transform: uppercase;
     text-align: center;
     user-select: none !important;
+    line-height: .95 !important;
   }
 
   h3.oswald {
@@ -126,6 +128,7 @@
     font-family: var(--font-roboto-condensed);
     font-size: var(--h4-size);
     text-transform: uppercase;
+    line-height: .95 !important;
   }
 
   h4.baskervville {
@@ -135,6 +138,7 @@
   p {
     font-family: var(--font-roboto-condensed);
     font-size: var(--p-size);
+    line-height: 1 !important;
   }
 
   p.bold {
