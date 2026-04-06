@@ -107,6 +107,10 @@
     line-height: 0.9;
   }
 
+  h2.oswald {
+    font-family: var(--font-oswald);
+  }
+
   h3 {
     font-size: var(--h3-size);
     font-family: var(--font-baskervville);
