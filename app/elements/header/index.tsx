@@ -1,8 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./header.module.css";
-import Separator from "../../components/separator";
+import Separator from "@/app/components/separator";
+import TextType from "@/app/components/texttype";
+import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [numbers, setNumbers] = useState<number[]>([]);
+
+  const text = "MAZZURANA RICCARDO";
+  const typingSpeed = 125;
+
+  useEffect(() => {
+    const generated = Array.from({ length: 11 }, () =>
+      Math.floor(Math.random() * 10),
+    );
+    setNumbers(generated);
+  }, []);
+
   return (
     <header>
       <div className={styles.headerContent}>
@@ -20,25 +36,59 @@ export default function Header() {
           </Separator>
         </div>
 
-        <div className={`hidden ${styles.barCodeContainer} lg:grid `}>
+        <div className={`hidden! ${styles.barCodeContainer} lg:flex! `}>
           <div className={styles.barCodeBarContainer}>
             {[...Array(15)].map((_, index) => (
               <div key={index} className={styles.barCodeBar} />
             ))}
           </div>
           <div className={styles.barCodeNumber}>
-            {[...Array(11)].map((_, index) => (
-              <p key={index}>{Math.floor(Math.random() * 10)}</p>
+            {numbers.map((number, index) => (
+              <p key={index}>{number}</p>
             ))}
+            {/* {[...Array(11)].map((_, index) => (
+              <p key={index}>{Math.floor(Math.random() * 10)}</p>
+            ))} */}
           </div>
         </div>
       </div>
 
-      <h1 className="hidden md:block">Mazzurana Riccardo</h1>
-      <div className="block md:hidden">
-        <h1 className="surnameSmall">Mazzurana</h1>
-        <h1 className="nameSmall">Riccardo</h1>
+      {/* WEB TITLE */}
+      <div className="relative hidden md:block">
+        <h1 className="opacity-0 pointer-events-none select-none">{text}</h1>
+
+        <div className="absolute top-0 left-0 w-full h-full">
+          <TextType
+            text={text}
+            typingSpeed={typingSpeed}
+            showCursor={false}
+            as="h1"
+            loop={false}
+          />
+        </div>
       </div>
+
+      {/* MOBILE TITLE */}
+      <div className="block md:hidden">
+        <TextType
+          text="Mazzurana"
+          typingSpeed={typingSpeed}
+          showCursor={false}
+          as="h1"
+          loop={false}
+          className="surnameSmall"
+        />
+        <TextType
+          text="Riccardo"
+          typingSpeed={typingSpeed}
+          showCursor={false}
+          as="h1"
+          loop={false}
+          className="nameSmall"
+          initialDelay={1150}
+        />
+      </div>
+
       <Separator />
     </header>
   );
