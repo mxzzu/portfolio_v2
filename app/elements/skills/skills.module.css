@@ -1,0 +1,30 @@
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap-32);
+}
+
+.skillContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap-16);
+}
+
+.titleContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    background-color: var(--color-black);
+    color: var(--color-white);
+    flex-wrap: wrap;
+}
+
+.levelContainer {
+    gap: var(--spacing-gap-10);
+    padding: var(--padding);
+    text-transform: uppercase;
+    font-size: 16px;
+    align-items: center;
+    background-color: var(--color-white);
+    color: var(--color-black);
+}

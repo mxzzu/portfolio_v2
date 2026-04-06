@@ -1,5 +1,5 @@
 import styles from "./languages.module.css";
-import { languages } from "../../data/languages";
+import { languages } from "@/app/data/languages";
 import SectionTitle from "@/app/components/sectionTitle";
 
 export default function Languages() {

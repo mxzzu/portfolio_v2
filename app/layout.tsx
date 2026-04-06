@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { oswald, tangerine, baskervville, robotoCondensed } from "./fonts/font";
-import "./globals.css";
+import { oswald, tangerine, baskervville, robotoCondensed } from "@/app/fonts/font";
+import "@/app/globals.css";
 
 export const metadata: Metadata = {
   title: "Mazzu - Software Developer Portfolio",
