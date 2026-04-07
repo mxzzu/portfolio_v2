@@ -6,6 +6,7 @@ import Studies from "@/app/elements/studies";
 import { about } from "@/app/data/about";
 import Photo from "@/app/elements/photo";
 import DailyColumn from "./elements/dailyColumn";
+import Contact from "./elements/contact";
 
 export default function Home() {
   return (
@@ -60,14 +61,15 @@ export default function Home() {
             <Skills />
           </div>
 
-          {/* SOTTO-COLONNA CENTRALE (Photo, Daily Column, Hobby) */}
+          {/* SOTTO-COLONNA CENTRALE (Photo, Daily Column, Hobby, Contacts) */}
           <div className="flex flex-col gap-10 px-4">
             <Photo />
             <DailyColumn />
+            <Contact />
           </div>
         </div>
 
-        {/* COLONNA DESTRA (Knowledge Acquired, Works, Contacts) */}
+        {/* COLONNA DESTRA (Knowledge Acquired, Works) */}
         <div className="md:col-span-1 flex flex-col gap-10">
           <Studies />
         </div>

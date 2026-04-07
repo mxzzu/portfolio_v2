@@ -1,0 +1,40 @@
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-32);
+}
+
+.mailContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-8);
+}
+
+.otherContactsContainer {
+  display: flex;
+  gap: var(--spacing-gap-16);
+}
+
+.callCenterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-24);
+}
+
+.numberContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-10);
+}
+
+.socialContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-8);
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: left;
+    gap: var(--spacing-gap-8);
+}
