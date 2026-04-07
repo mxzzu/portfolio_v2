@@ -1,3 +1,6 @@
+"use client";
+
+import LogoLoop from "@/app/components/logoloop";
 import styles from "./skills.module.css";
 import SectionTitle from "@/app/components/sectionTitle";
 import { skills } from "@/app/data/skills";
@@ -5,7 +8,10 @@ import { skills } from "@/app/data/skills";
 export default function Skills() {
   return (
     <section>
-      <SectionTitle title="tools of the trade" subtitle="“The machinery, methods, and mastery powering every result.”" />
+      <SectionTitle
+        title="tools of the trade"
+        subtitle="“The machinery, methods, and mastery powering every result.”"
+      />
 
       <div className={styles.skillsContainer}>
         {skills.map((skill, index) => (
@@ -18,6 +24,20 @@ export default function Skills() {
             </div>
             <p>{skill.description}</p>
             {/* LOGOS */}
+            {skill.icons && (
+              <LogoLoop
+                logos={skill.icons}
+                speed={100}
+                direction="left"
+                logoHeight={60}
+                gap={60}
+                hoverSpeed={0}
+                scaleOnHover
+                fadeOut
+                fadeOutColor="#fbfaf5"
+                ariaLabel="Technology partners"
+              />
+            )}
           </div>
         ))}
       </div>
