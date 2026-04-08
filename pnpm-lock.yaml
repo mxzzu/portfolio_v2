@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@thesvg/react':
+        specifier: ^2.1.2
+        version: 2.1.2(react@19.2.4)
       gsap:
         specifier: ^3.14.2
         version: 3.14.2
@@ -528,6 +531,12 @@ packages:
 
   '@tailwindcss/postcss@4.2.2':
     resolution: {integrity: sha512-n4goKQbW8RVXIbNKRB/45LzyUqN451deQK0nzIeauVEqjlI49slUlgKYJM2QyUzap/PcpnS7kzSUmPb1sCRvYQ==}
+
+  '@thesvg/react@2.1.2':
+    resolution: {integrity: sha512-qL4DrHhzsL96317/vzC229+w6XiCGoKGr8+X1jox+lEqYHUiB10jiOQMYlGGzPLEqqptyhFx82J+pLcvDvpPPA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      react: '>=18'
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -2382,6 +2391,10 @@ snapshots:
       '@tailwindcss/oxide': 4.2.2
       postcss: 8.5.8
       tailwindcss: 4.2.2
+
+  '@thesvg/react@2.1.2(react@19.2.4)':
+    dependencies:
+      react: 19.2.4
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
