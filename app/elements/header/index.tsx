@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import styles from "./header.module.css";
-import Separator from "@/app/components/separator";
-import TextType from "@/app/components/texttype";
+import Separator from "@/app/components/Separator";
+import TextType from "@/app/components/TextType";
 import { useEffect, useState } from "react";
 
 export default function Header() {

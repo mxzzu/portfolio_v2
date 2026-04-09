@@ -1,4 +1,4 @@
-import { LogoItem } from "@/app/components/logoloop";
+import { LogoItem } from "@/app/components/LogoLoop";
 import React from "react";
 import Image from "next/image" 
 

@@ -1,5 +1,5 @@
 import styles from "./jobs.module.css";
-import SectionTitle from "@/app/components/sectionTitle";
+import SectionTitle from "@/app/components/SectionTitle";
 import { jobs } from "@/app/data/jobs";
 
 export default function Jobs() {

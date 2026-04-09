@@ -1,5 +1,5 @@
 import styles from "./studies.module.css";
-import SectionTitle from "@/app/components/sectionTitle";
+import SectionTitle from "@/app/components/SectionTitle";
 import { studies } from "@/app/data/studies";
 
 export default function Studies() {

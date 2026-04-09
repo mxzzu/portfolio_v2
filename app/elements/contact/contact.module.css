@@ -4,37 +4,44 @@
   gap: var(--spacing-gap-32);
 }
 
-.mailContainer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--spacing-gap-8);
+.contactContainer input {
+  background: transparent;
+  outline: none;
+  border-bottom: solid 2px var(--color-black);
+  color: var(--color-black);
+  font-size: var(--p-size);
 }
 
-.otherContactsContainer {
+.contactContainer input:active {
+  outline: none;
+}
+
+.contactContainer input:hover {
+  outline: none;
+  opacity: 0.9;
+}
+
+.nameContainer {
   display: flex;
   gap: var(--spacing-gap-16);
 }
 
-.callCenterContainer {
+.generalityContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-gap-24);
+  flex: 1;
+  gap: var(--spacing-gap-8);
 }
 
-.numberContainer {
+.mailContainer {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-gap-10);
-}
-
-.socialContainer {
-  display: flex;
-  flex-direction: column;
+  flex: 1;
   gap: var(--spacing-gap-8);
 }
 
 .buttonContainer {
-    display: flex;
-    align-items: left;
-    gap: var(--spacing-gap-8);
+  display: flex;
+  gap: var(--spacing-gap-8);
+  margin-left: auto;
 }

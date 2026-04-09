@@ -7,7 +7,7 @@ interface SocialButtonProp {
 
 export default function SocialButton({ label, href }: SocialButtonProp) {
   return (
-    <Link href={href} className="flex items-start p-(--padding) bg-black text-white cursor-pointer select-none">
+    <Link href={href} className="flex items-start py-(--padding) px-(--padding-double) bg-black text-white cursor-pointer select-none">
         <span className="uppercase text-(length:--h5-size)">{label}</span>
     </Link>
   );

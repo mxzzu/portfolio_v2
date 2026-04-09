@@ -1,6 +1,6 @@
-import SocialButton from "@/app/components/socialbutton";
+import SocialButton from "@/app/components/SocialButton";
 import styles from "./contact.module.css";
-import SectionTitle from "@/app/components/sectionTitle";
+import SectionTitle from "@/app/components/SectionTitle";
 import Image from "next/image";
 
 export default function Contact() {
@@ -13,30 +13,29 @@ export default function Contact() {
       </div>
 
       <div className={styles.contactContainer}>
-        <div className={styles.mailContainer}>
-          <p>MAIL:</p>
-          <h5>riccardo.mazzurana@gmail.com</h5>
-        </div>
-        <div className={styles.otherContactsContainer}>
-          <div className={styles.callCenterContainer}>
-            <p>CALL CENTER:</p>
-            <div className={styles.numberContainer}>
-              <h5>+39 351 370 5799</h5>
-            </div>
+        <div className={styles.nameContainer}>
+          <div className={styles.generalityContainer}>
+            <p>NAME:</p>
+            <input type="text" placeholder="MARIO" />
           </div>
-          <div className={styles.socialContainer}>
-            <p>SEE ALSO:</p>
-            <div className={styles.buttonContainer}>
-              <SocialButton
-                label="github"
+          <div className={styles.generalityContainer}>
+            <p>SURNAME:</p>
+            <input type="text" placeholder="ROSSI" />
+          </div>
+        </div>
+        <div className={styles.mailContainer}>
+          <p>MAIL ADDRESS:</p>
+          <input type="email" placeholder="EXAMPLE@GMAIL.COM" />
+        </div>
+        <div className={styles.mailContainer}>
+          <p>TELL ME SOMETHING:</p>
+          <input type="text" placeholder="Hi, I would like to ask..." />
+        </div>
+        <div className={styles.buttonContainer}>
+          <SocialButton
+                label="send"
                 href="https://www.github.com/mxzzu"
               />
-              <SocialButton
-                label="linkedin"
-                href="https://www.linkedin.com/riccardo-mazzurana"
-              />
-            </div>
-          </div>
         </div>
       </div>
     </section>

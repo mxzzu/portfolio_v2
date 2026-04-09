@@ -1,11 +1,12 @@
-import { LogoItem } from "@/app/components/logoloop";
+import { LogoItem } from "@/app/components/LogoLoop";
 import { web, software, database } from "./logos";
 
 interface Skill {
     title: string,
     description: string,
     level: string,
-    icons?: LogoItem[]
+    icons?: LogoItem[],
+    direction?: "left" | "right"
 }
 
 export const skills: Skill[] = [
@@ -14,6 +15,7 @@ export const skills: Skill[] = [
         description: "Focusing on building responsive and intuitive user interfaces, I combine modern frameworks with clean code to create seamless digital experiences. I bridge the gap between design and functionality to ensure high performance across all devices",
         level: "Basic",
         icons: web,
+        direction: "left",
     },
 
     {
@@ -21,6 +23,7 @@ export const skills: Skill[] = [
         description: "Experienced in the full software development life cycle, I specialize in building scalable applications using C# and .NET. My approach prioritizes modular architecture, maintainability, and the implementation of efficient backend logic",
         level: "Intermediate",
         icons: software,
+        direction: "right",
     },
 
     {
@@ -28,6 +31,7 @@ export const skills: Skill[] = [
         description: "Skilled in designing and optimizing relational databases, I focus on data integrity and query performance. I manage complex data structures to ensure that applications remain fast, secure, and capable of handling growing workloads",
         level: "Intermediate",
         icons: database,
+        direction: "left"
     },
 
     {

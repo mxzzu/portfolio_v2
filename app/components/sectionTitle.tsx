@@ -1,4 +1,4 @@
-import Separator from "./separator";
+import Separator from "./Separator";
 
 interface SectionTitleProp {
   title: string;

@@ -1,8 +1,8 @@
 "use client";
 
-import LogoLoop from "@/app/components/logoloop";
+import LogoLoop from "@/app/components/LogoLoop";
 import styles from "./skills.module.css";
-import SectionTitle from "@/app/components/sectionTitle";
+import SectionTitle from "@/app/components/SectionTitle";
 import { skills } from "@/app/data/skills";
 
 export default function Skills() {
@@ -28,14 +28,13 @@ export default function Skills() {
               <LogoLoop
                 logos={skill.icons}
                 speed={100}
-                direction="left"
+                direction={skill.direction}
                 logoHeight={60}
                 gap={60}
                 hoverSpeed={0}
                 scaleOnHover
                 fadeOut
                 fadeOutColor="#fbfaf5"
-                ariaLabel="Technology partners"
               />
             )}
           </div>
