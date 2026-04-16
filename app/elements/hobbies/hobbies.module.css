@@ -1,0 +1,10 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-gap-8);
+}
+
+.photoContainer {
+  display: flex;
+  gap: var(--spacing-gap-16);
+}

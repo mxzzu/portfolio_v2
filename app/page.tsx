@@ -8,6 +8,7 @@ import Photo from "@/app/elements/photo";
 import DailyColumn from "@/app/elements/dailyColumn";
 import Contact from "@/app/elements/contact";
 import Footer from "@/app/elements/footer";
+import Hobbies from "@/app/elements/hobbies";
 
 export default function Home() {
   return (
@@ -64,6 +65,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 px-4">
             <Photo />
             <DailyColumn />
+            <Hobbies />
             <Contact />
           </div>
         </div>
