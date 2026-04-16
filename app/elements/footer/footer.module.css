@@ -1,0 +1,22 @@
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap-32);
+    margin-top: 30px;
+}
+
+.contactContainer {
+    display: flex;
+    gap: var(--spacing-gap-32);
+}
+
+.mailContainer {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-gap-8);
+}
+
+.buttonContainer {
+    display: flex;
+    gap: var(--spacing-gap-16);
+}

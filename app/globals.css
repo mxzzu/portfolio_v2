@@ -68,6 +68,16 @@
     container-type: inline-size;
   }
 
+  footer {
+    display: flex;
+    gap: var(--spacing-gap-32);
+    flex-direction: column;
+    container-type: inline-size;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    padding: var(--padding-double);
+  }
+
   main {
     padding: var(--margin);
   }
